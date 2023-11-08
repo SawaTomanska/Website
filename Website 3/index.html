@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<title>Sawa Tomanska - Front-End Developer</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Portfolio Sawy Tomańskiej, Front-end developera i grafika komputerowego. Strony, aplikacje webowe i nie tylko, na zamówienie.">
+	<meta name="keywords" content="portfolio, front-end, developer, strony internetowe, aplikacje, grafika">
+	<meta name="author" content="Sawa Tomańska">
+	<link rel="Shortcut icon" href="img/icon.png" />
+	<!--<meta http-equiv="X-UaCompatible" content="IE-edge, chrome-1">-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Roboto+Slab" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/function.js"></script>
+	<script src="js/autosize.min.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+					<a class="navbar-brand logo" href="index.html">
+                    <img class="img-responsive" src="img/logo.png" alt="Logo">
+                </a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="o-mnie.html">O mnie</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+	<!-- /.container-fluid -->
+	<div class="section1 container-fluid">
+	</div>
+	<div class="section2 container-fluid">
+		<div class="row">
+			<div class="col-md-5 col-md-offset-2 col-xs-8 col-xs-offset-2">
+				<h2>Witam, mam na imię Sawa.</h2>
+				<p>Jestem Front-end Developerem, z zamiłowania grafikiem komputerowym, z wykształcenia plastykiem. Po kilku latach błądzenia znalazłam swoją drogę w życiu, jest to Front-end. Jestem na początku tej drogi, ale to w tej dziedzinie będę rozwijać swoje kreatywne skrzydła.</p>
+			</div>
+			<div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-2">
+				<img src="img/icon12.png" class="img-responsive" title="image" alt="image">
+			</div>
+		</div>
+	</div>
+	<div class="section3 container-fluid">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+				<h2>Portfolio</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<h3>Projekty stron</h3>
+						<img src="img/thumb-1w.jpg" class="img-responsive" title="thumb1" alt="thumb1">
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<h3>Aplikacje</h3>
+						<img src="img/thumb-6a.jpg" class="img-responsive" title="thumb2" alt="thumb2">
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<h3>Prace graficzne</h3>
+						<img src="img/thumb-2g.jpg" class="img-responsive" title="thumb3" alt="thumb3">
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<h3>Całe portfolio</h3>
+						<a href="portfolio.html"><img src="img/thumb.jpg" class="img-responsive" title="thumb3" alt="thumb3"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section4 container-fluid">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+				<h2>Kontakt</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+				<div>
+					<p>Można się ze mną skontaktować przez maila: <span>sawa.wisniewska@gmail.com</span> albo skorzystać z poniższego formularza kontaktowego</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+				<form method="post" action="formularz.php" id="contactform">
+					<input type="text" name="name" id="name" placeholder="IMIĘ I NAZWISKO" class="form-control">
+					<span id="nameError"></span>
+					<input type="email" name="email" id="email" placeholder="ADRES E-MAIL" class="form-control">
+					<span id="emailError"></span>
+					<input type="text" name="title" id="title" placeholder="TEMAT WIADOMOŚCI" class="form-control">
+					<span id="titleError"></span>
+					<textarea name="content" id="content" placeholder="TREŚĆ..." class="form-control"></textarea>
+					<span id="contentError"></span>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+							<button type="submit" class="btn btn-warning button" name="button">Wyślij</button>
+							<span id="News"></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="gap-bottom"></div>
+	<footer>
+		<div class="footer">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+					<div class="row footer-top">
+						<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+							<div class="row">
+								<div class="col-md-4 col-xs-8">
+									<img src="img/logo-mini.png" class="img-responsive" title="logo" alt="logo">
+								</div>
+								<div class="col-md-4 col-xs-8">
+									<ul class="nav">
+										<li><a href="portfolio.html">Portfolio</a></li>
+										<li><a href="o-mnie.html">O mnie</a></li>
+										<li><a href="kontakt.html">Kontakt</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom container-fluid">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+					<div class="col-xs-10">© 2017 by Sawa Tomańska</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

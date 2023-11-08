@@ -1,0 +1,474 @@
+/* Strona */
+$black: #000;
+$white: #f2f2f2; 
+$orange: #e65e19;
+$gray:#777777;
+$red: #EE1D3C;
+$green: #32cda6;
+$Roboto: "Roboto Slab", serif;
+$exo: "Exo 2", sans-serif;
+
+body {
+    text-align: center;
+	font-family: $Roboto;
+    h2 {
+        font-size: 60px;
+		text-shadow: 3px 2px 0px $orange;
+		font-family: $exo;
+    }
+    nav {
+        padding-left: 30px;
+        background: rgba($white, 0.8);
+		font-family: $exo;
+        .logo {
+            padding: 8px 20px;
+        }
+        ul {
+            padding: 13px;
+            font-size: 25px;
+			li:hover {
+				font-weight: 700;
+			}
+        }
+    }
+
+    .section1 {
+        background-image: url(../img/background1.jpg); 
+        min-height: 556px;
+		position: relative;
+		z-index: 100;
+    }
+	
+	 .section1-p {
+        background-color: #7B56A4; 
+        min-height: 300px;
+		padding-top: 120px;
+    }
+	
+	 .section1-o {
+        background-color: #149A9B; 
+        min-height: 300px;
+		padding-top: 120px;
+    }
+	
+	.section1-k {
+        background-color: #EE1D3C; 
+        min-height: 300px;
+		padding-top: 120px;
+    }
+	
+	.section2 {
+        background-image: url(../img/background.jpg); 
+        background-repeat: repeat;
+        background-size: cover;
+        text-align: left;
+        font-size: 20px;
+        padding-top: 30px;
+		padding-bottom: 30px;
+        position: relative;
+        z-index: 100;
+        h2 {
+            font-size: 40px;
+            padding-top: 20px;
+        }
+         @media screen and (max-width: 650px) {
+            h2 {
+                font-size: 30px;
+            }
+        }
+	}  
+	
+	.section3 {
+		background-color: $white;
+        position: relative;
+        z-index: 100;
+        padding-top: 50px;
+		padding-bottom: 50px;
+		img {
+			transition: all 0.4s ease-in-out;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.overlay {
+			position: relative;
+  			width: 100%;
+			margin: 15px 0;
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+				margin: 0 auto;
+				}
+			.link {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				display: block;
+				width: 100%;
+				height: 100%;
+				background: rgba($gray, 0.7);
+				opacity: 0;
+				transition: all 0.5s ease-in-out;
+				text-decoration: none;
+				color: $black;
+				.text {
+					position: absolute;
+					top: 20%;
+					left: 25%;
+					width: 50%;
+					height: 50%;
+					h3 {
+						font-family:$exo;
+						text-transform: uppercase;
+						font-weight: 700;
+					}
+					p {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+		.overlay:hover .link {
+			opacity: 1;
+		}
+		
+		img:hover {
+			opacity: 0.6;
+		}
+		
+		h2 {
+            padding-top: 20px;
+			padding-bottom: 20px;
+        }
+        p {
+		font-size: 23px;
+			span {
+                color: $black;
+            }
+        }
+        .form-control {
+            margin: 15px 0;
+			font-family: $exo;
+        }
+        button {
+            margin: 39px 0;
+            padding: 10px 80px;
+            font-size: 24px;
+			font-family: $exo;
+			font-weight: 700;
+        }
+		input.invalid, textarea.invalid{
+			border: 3px solid $red;
+		}
+
+		input.valid, textarea.valid{
+			border: 3px solid $green;
+		}
+		.Error {
+			text-align: left;
+			color: $red;
+			font-weight: 700;
+		}
+
+        @media screen and (max-width: 650px) {
+            h2 {
+                font-size: 33px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+        }
+		.cv-all {
+			text-align: left;
+			.header {
+				font-size: 70px;
+				text-shadow: none;
+				padding: 0;
+				margin: 0;
+			}
+			.subheader {
+				font-size: 25px;
+				text-shadow: none;
+				span {
+					color: $orange;
+				}
+			}
+			p {
+				font-size: 18px;
+			}
+			.download {
+				font-size: 22px;
+				padding-top: 20px;
+				text-align: center;
+			}
+			h3 {
+				text-align: center;
+				margin: 0;
+				
+			}
+			h2 {
+				text-align: center;
+				font-size: 40px;
+				margin-top: 0;
+			}
+			a {
+				color: $orange;
+			}
+			.cv {
+				background-color: #e6e6e6;
+				margin-top: 50px;
+				ul {
+					list-style-type: none;
+					h4 {
+						font-size: 25px;
+						font-weight: 700;
+					}
+					p {
+						font-size: 20px;
+						padding-left: 25px;
+					}
+				}
+			}
+		}
+		
+    }
+	
+	.gap-bottom {
+			height: 300px;
+			background: transparent;
+			 @media screen and (max-width: 1000px) {
+				margin-bottom: 110px;
+			} 
+		}
+	
+    .section4 {
+        background-image: url(../img/background-lg.jpg); 
+        background-repeat: repeat;
+        background-size: cover;
+        padding-top: 30px;
+		padding-bottom: 30px;
+        position: relative;
+        z-index: 100;
+		input.invalid, textarea.invalid{
+			border: 3px solid $orange;
+		}
+
+		input.valid, textarea.valid{
+			border: 3px solid $green;
+		}
+
+        h2 {
+            padding: 20px 0;
+        }
+        p {
+		font-size: 23px;
+			span {
+                color: $black;
+            }
+        }
+        .form-control {
+            margin: 30px 0;
+			font-family: $exo;
+        }
+        button {
+            margin: 39px 0;
+            padding: 10px 80px;
+            font-size: 24px;
+			font-family: $exo;
+			font-weight: 700;
+        }
+		.Error {
+			text-align: left;
+			color: $orange;
+			font-weight: 700;
+		}
+         @media screen and (max-width: 650px) {
+            h2 {
+                font-size: 33px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    
+	footer {
+		background-image: url(../img/background-footer.jpg); 
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: fixed;
+		bottom: 0px;
+		z-index: 50;
+		width: 100%;			
+			.footer-top {
+				padding-top: 35px;
+				padding-bottom: 35px;
+				display: flex;
+				justify-content: center;
+				ul {
+					font-size: 20px;
+					font-family: $exo;
+					li {
+						a{
+							color: #555;
+							}
+						a:hover {
+							color: $black;
+							background: transparent;
+							font-weight: 700;
+							}
+					}
+				}
+			}
+			 @media screen and (max-width: 1000px) {
+				ul { 
+					margin-top: 20px;
+				 }
+			}
+		.footer-bottom {
+				text-align: left;
+				padding-bottom: 10px;
+			}
+		
+		.footer-p {
+			background-color: #a48ac1;
+			.footer-top {
+				padding-top: 35px;
+				padding-bottom: 35px;
+				ul {
+					font-size: 20px;
+					font-family: $exo;
+					li {
+						a{
+							color: #555;
+							}
+						a:hover {
+							color: $black;
+							background: transparent;
+							font-weight: 700;
+							}
+					}
+				}
+			}
+
+			 @media screen and (max-width: 1000px) {
+				ul { 
+					margin-top: 20px;
+				 }
+			}
+		}
+		.footer-bottom-p {
+				text-align: left;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				background-color: #7B56A4;
+				min-height: 40px;
+			}
+
+		.footer-o {
+			background-color: #1acbcb;
+			.footer-top {
+				padding-top: 35px;
+				padding-bottom: 35px;
+				ul {
+					font-size: 20px;
+					font-family: $exo;
+					li {
+						a{
+							color: #555;
+							}
+						a:hover {
+							color: $black;
+							background: transparent;
+							font-weight: 700;
+							}
+					}
+				}
+			}
+
+			 @media screen and (max-width: 1000px) {
+				ul { 
+					margin-top: 20px;
+				 }
+			}
+		}
+		.footer-bottom-o {
+				text-align: left;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				background-color: #149A9B;
+				min-height: 40px;
+			}
+
+		.footer-k {
+			background-color: #f1415c;
+			.footer-top {
+				padding-top: 35px;
+				padding-bottom: 35px;
+				ul {
+					font-size: 20px;
+					font-family: $exo;
+					li {
+						a{
+							color: #555;
+							}
+						a:hover {
+							color: $black;
+							background: transparent;
+							font-weight: 700;
+							}
+					}
+				}
+			}
+
+			 @media screen and (max-width: 1000px) {
+				ul { 
+					margin-top: 20px;
+				 }
+			}
+		}
+		.footer-bottom-k {
+				text-align: left;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				background-color: #EE1D3C;
+				min-height: 40px;
+			}
+	}
+	.My-modal {
+		width: 100%;
+		height: 100%;
+		background: rgba($black, 0.6);
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		display: block;
+		img:hover {
+			opacity: 1;
+			}
+		p {
+			color: $white;
+			font-size: 25px;
+			padding-top: 20px;
+		}
+		.close {
+			position: absolute;
+			top: -5px;
+			right: -20px;
+			color: $white;
+			font-size: 40px;
+			font-weight: bold;
+			transition: 0.3s;
+		}
+		.close:hover {
+			color: #bbb;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+}
